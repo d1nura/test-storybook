@@ -13,7 +13,6 @@ import { Heading } from "../Typography/Heading";
 const MainTile = styled.div`
   display: flex;
   align-items: center;
-  width: 200px;
   justify-content: space-between;
 `;
 
@@ -60,7 +59,9 @@ export const App = () => {
         <HeaderContainer>
           <MainTile>
             <Heading.H3 fontSize="20px">Social Media</Heading.H3>
-            <Heading.P fontSize="14px">Last 28 days</Heading.P>
+            <Heading.P fontSize="14px" ml="20px">
+              Last 28 days
+            </Heading.P>
           </MainTile>
           <MainButton>
             <ButtonDesc>
