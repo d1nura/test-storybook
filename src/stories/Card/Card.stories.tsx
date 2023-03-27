@@ -1,8 +1,14 @@
-import { Card as C } from "./Card";
+import { Card } from "./Card";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 export default {
   title: "Card",
-  component: C,
+  component: Card,
 };
 
-export const Card = (props: { height: string }) => <C {...props} />;
+export const Template: ComponentStory<typeof Card> = (args) => (
+  <Card {...args} />
+);
+
+export const Primary = Template.bind({});
+Primary.args = { height: "200px", width: "150px", padding: "20px" };

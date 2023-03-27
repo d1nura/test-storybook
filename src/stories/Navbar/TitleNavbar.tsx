@@ -20,7 +20,7 @@ const Header = styled.div`
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
-  height: 50px;
+  height: 70px;
   ${({ isNavbarCollapsed }: { isNavbarCollapsed: boolean }) =>
     isNavbarCollapsed &&
     `
@@ -53,10 +53,12 @@ const NavTitle = styled.div`
   display: flex;
   align-items: center;
   transition: 0.5s;
+  color: #8a97a6;
   :hover {
-    background: #f5f6ff;
+    background: #f2f4fe;
     cursor: pointer;
-    border-left: 4px solid #7149c6;
+    border-left: 4px solid #866cff;
+    color: #8f80e8;
   }
 `;
 

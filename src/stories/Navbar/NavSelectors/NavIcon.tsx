@@ -18,17 +18,16 @@ const NavIcon = ({
     justify-content: center;
     align-items: center;
     transition: 0.6s;
+    color: #866cff;
     :hover {
       cursor: pointer;
-      background-color: #c9eeff;
-      // color: white;
+      background-color: #f2f4fe;
     }
     ${({ selcted }: { selcted: boolean }) =>
       selcted &&
       `
       cursor: pointer;
-      background-color: #C9EEFF;
-      // color: white;
+      background-color:#f2f4fe;
   `}
   `;
 

@@ -1,8 +1,21 @@
-import { Icon as I, iconProps, styledProps } from "./Icon";
+import { faFire } from "@fortawesome/free-solid-svg-icons";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { Icon } from "./Icon";
 
 export default {
   title: "Icon",
-  component: I,
+  component: Icon,
 };
 
-export const Icon = (props: styledProps & iconProps) => <I {...props} />;
+export const Template: ComponentStory<typeof Icon> = (args) => (
+  <Icon {...args} />
+);
+
+export const Primary = Template.bind({});
+Primary.args = {
+  height: "40px",
+  width: "40px",
+  icon: faFire,
+  iconColor: "blue",
+  background: "skyblue",
+};
