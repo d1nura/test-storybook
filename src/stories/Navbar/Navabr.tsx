@@ -1,3 +1,4 @@
+import _ from "lodash";
 import { useState } from "react";
 import styled from "styled-components";
 import { Icons } from "../../icons/Icons";
@@ -52,6 +53,7 @@ const Navbar = () => {
         {IconNavMap.map((navItem) => {
           return (
             <NavIcon
+              key={_.uniqueId()}
               selected={selectedTitle.key === navItem.key}
               icon={navItem.icon}
               onClick={() => selectNavItem(navItem)}
