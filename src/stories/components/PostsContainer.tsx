@@ -7,14 +7,14 @@ import { Heading } from "../Typography/Heading";
 
 const PostHolder = styled.div`
   position: relative;
-  height: 60px;
+  height: 50px;
   margin: 15px 0px;
   display: flex;
   align-items: center;
 `;
 
 const PostImage = styled.img`
-  width: 60px;
+  width: 50px;
   border-radius: 5px;
 `;
 
@@ -63,10 +63,10 @@ const Post = ({
         </IconHolder>
       </ImageContainer>
       <PostHeadings>
-        <Heading.P fontSize="14px" mb="5px">
+        <Heading.P fontSize="12px" mb="5px">
           {title}
         </Heading.P>
-        <Heading.P fontSize="14px">{description}</Heading.P>
+        <Heading.P fontSize="12px">{description}</Heading.P>
       </PostHeadings>
     </PostHolder>
   );
@@ -76,13 +76,13 @@ const posts = [
   {
     title: "Jan 15, 2020 - 12:50 PM",
     description: "Big day for amazon devices.",
-    imageSrc: "http://placekitten.com/g/60/60",
+    imageSrc: "http://placekitten.com/g/50/50",
     icon: faFire,
   },
   {
     title: " Jan 15, 2020 - 12:50 PM",
     description: "Big day for amazon devices.",
-    imageSrc: "http://placekitten.com/60/60",
+    imageSrc: "http://placekitten.com/50/50",
     icon: faFish,
   },
 ];
@@ -90,7 +90,7 @@ const posts = [
 export const PostsContainer = () => {
   return (
     <div>
-      <Heading.H3 fontSize="15px" mb="20px">
+      <Heading.H3 fontSize="14px" mb="20px">
         Recent Posts
       </Heading.H3>
       {posts.map(({ title, description, imageSrc, icon }) => {

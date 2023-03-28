@@ -3,14 +3,15 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Icons } from "../../icons/Icons";
 import { NavList } from "../../Nav";
+import { Heading } from "../Typography/Heading";
 
 const Container = styled.div`
-  width: 200px;
+  width: 170px;
   transition: 0.5s;
   ${({ isNavbarCollapsed }: { isNavbarCollapsed: boolean }) =>
     isNavbarCollapsed &&
     `
-  width:45px;
+    width:50px;
 `}
 `;
 
@@ -20,11 +21,12 @@ const Header = styled.div`
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
-  height: 70px;
+  height: 85px;
   ${({ isNavbarCollapsed }: { isNavbarCollapsed: boolean }) =>
     isNavbarCollapsed &&
     `
   padding:0px;
+
 `}
 `;
 
@@ -54,6 +56,7 @@ const NavTitle = styled.div`
   align-items: center;
   transition: 0.5s;
   color: #8a97a6;
+  font-size: 14px;
   :hover {
     background: #f2f4fe;
     cursor: pointer;
@@ -79,7 +82,9 @@ const TitleNavbar = ({
   return (
     <Container isNavbarCollapsed={isNavbarCollapsed}>
       <Header isNavbarCollapsed={isNavbarCollapsed}>
-        {!isNavbarCollapsed && <p>{header}</p>}
+        {!isNavbarCollapsed && (
+          <Heading.H3 fontSize="15px">{header}</Heading.H3>
+        )}
         <IconHolder
           isNavbarCollapsed={isNavbarCollapsed}
           onClick={collapseNavbar}

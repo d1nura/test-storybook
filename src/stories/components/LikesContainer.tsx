@@ -9,7 +9,8 @@ const LikesHolder = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0px 45px;
 `;
 
 const HeadingsContainer = styled.div`
@@ -41,10 +42,10 @@ const LikesContainerItem = ({
         width="35px"
         height="35px"
       />
-      <Heading.P fontSize="12px" mb="5px" mt="5px">
+      <Heading.P fontSize="12px" mb="7px" mt="5px">
         {title1}
       </Heading.P>
-      <Heading.H3 fontSize="14px" color="black" mb="5px">
+      <Heading.H3 fontSize="14px" color="black" mb="7px">
         {title2}
       </Heading.H3>
       <Heading.P fontSize="12px" color={title3Color}>

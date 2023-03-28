@@ -37,15 +37,14 @@ const HeaderContainer = styled.div`
 const CardHolder = styled.div`
   width: 100%;
   display: flex;
-  // border: 1px solid red;
-  margin-top: 20px;
+  margin-top: 16px;
 `;
 
 const VerticalHolder = styled.div`
   height: 100%;
   width: 45%;
   display: grid;
-  grid-template-rows: 150px 220px;
+  grid-template-rows: 135px 197px;
   grid-template-columns: 1fr;
   grid-gap: 10px;
   margin-left: 10px;
@@ -54,12 +53,14 @@ const VerticalHolder = styled.div`
 export const App = () => {
   return (
     <AppLayout>
-      <Heading.H1>Overview</Heading.H1>
-      <Holder>
+      <Heading.H1 mt="7px" fontSize="25px">
+        Overview
+      </Heading.H1>
+      <Holder height="412px">
         <HeaderContainer>
           <MainTile>
-            <Heading.H3 fontSize="20px">Social Media</Heading.H3>
-            <Heading.P fontSize="14px" ml="20px">
+            <Heading.H3 fontSize="18px">Social Media</Heading.H3>
+            <Heading.P fontSize="12px" ml="20px">
               Last 28 days
             </Heading.P>
           </MainTile>
@@ -70,11 +71,11 @@ export const App = () => {
               <IconHolder icon={faFilm} />
               <IconHolder icon={faBook} />
             </ButtonDesc>
-            <Button>See more</Button>
+            <Button height="50px">See more</Button>
           </MainButton>
         </HeaderContainer>
         <CardHolder>
-          <Card height="340px" width="55%" padding="20px">
+          <Card height="300px" width="50%" padding="20px">
             <ChartContainer />
           </Card>
           <VerticalHolder>

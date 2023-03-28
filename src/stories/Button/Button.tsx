@@ -8,14 +8,21 @@ const Btn = styled.button`
   border-radius: 5px;
   color: #a491ff;
   background: white;
+  height: ${({ height }: { height: string }) => height};
 `;
 
 export const Button = ({
   children,
   onClick,
+  height = "auto",
 }: {
   children: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  height?: string;
 }) => {
-  return <Btn onClick={onClick}>{children}</Btn>;
+  return (
+    <Btn onClick={onClick} height={height}>
+      {children}
+    </Btn>
+  );
 };

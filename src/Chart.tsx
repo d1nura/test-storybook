@@ -21,13 +21,13 @@ export const BarChart = () => {
             top: 10,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
+          {/* <CartesianGrid strokeDasharray="3 3" /> */}
+          <XAxis dataKey="name" fontSize={10} />
+          <YAxis fontSize={10} />
           <Tooltip />
-          <Legend />
-          <Bar dataKey="pv" fill="#8884d8" />
-          <Bar dataKey="uv" fill="#82ca9d" />
+          {/* <Legend /> */}
+          <Bar dataKey="pv" fill="#ffcb93" />
+          {/* <Bar dataKey="uv" fill="#82ca9d" /> */}
         </BC>
       </ResponsiveContainer>
     </div>

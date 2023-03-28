@@ -12,8 +12,8 @@ const NavIcon = ({
   selected: boolean;
 }) => {
   const Container = styled.div`
-    max-width: 60px;
-    height: 60px;
+    max-width: 65px;
+    height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;

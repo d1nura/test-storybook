@@ -12,8 +12,8 @@ type heading = {
   mt?: string;
 };
 
-const H1 = ({ children }: heading) => {
-  return <h1 style={comn}>{children}</h1>;
+const H1 = ({ children, fontSize, mt }: heading) => {
+  return <h1 style={{ ...comn, fontSize, marginTop: mt }}>{children}</h1>;
 };
 const H2 = ({ children }: heading) => {
   return <h2 style={comn}>{children}</h2>;
