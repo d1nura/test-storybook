@@ -17,7 +17,7 @@ const NavContainer = styled.nav`
   display: flex;
 `;
 
-const IconNavMap: IconNavMap[] = [
+export const IconNavMap: IconNavMap[] = [
   {
     key: "one",
     title: "Overview",

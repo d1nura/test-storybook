@@ -9,7 +9,7 @@ export default {
   component: NavIcon,
 };
 
-export const Template: ComponentStory<typeof NavIcon> = (args) => (
+const Template: ComponentStory<typeof NavIcon> = (args) => (
   <NavIcon {...args} />
 );
 
