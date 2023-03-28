@@ -6,12 +6,14 @@ export default {
   component: Button,
 };
 
-export const Template: ComponentStory<typeof Button> = (args) => (
-  <Button {...args} />
-);
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
+
 Primary.args = {
   children: "click",
   onClick: () => console.log("button clicked"),
+  width: "100px",
+  height: "40px",
+  color: "#a491ff",
 };

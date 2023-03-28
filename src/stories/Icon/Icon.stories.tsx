@@ -7,9 +7,7 @@ export default {
   component: Icon,
 };
 
-export const Template: ComponentStory<typeof Icon> = (args) => (
-  <Icon {...args} />
-);
+const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {

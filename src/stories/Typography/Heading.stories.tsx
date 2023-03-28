@@ -8,11 +8,9 @@ export default {
   component: Heading,
 };
 
-export const P: ComponentStory<typeof Heading.P> = (args) => (
-  <Heading.P {...args} />
-);
+const P: ComponentStory<typeof Heading.P> = (args) => <Heading.P {...args} />;
 
-export const H3: ComponentStory<typeof Heading.H3> = (args) => (
+const H3: ComponentStory<typeof Heading.H3> = (args) => (
   <Heading.H3 {...args} />
 );
 
@@ -28,5 +26,5 @@ Paragraph.args = {
 
 export const Heading3 = H3.bind({});
 Heading3.args = {
-  children: "This is paragraph",
+  children: "This is Heading 3",
 };
