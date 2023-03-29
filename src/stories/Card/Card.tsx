@@ -27,11 +27,7 @@ export const Card = ({
   padding?: string;
 }) => {
   return (
-    <Container
-      height={height ?? "auto"}
-      width={width ?? "auto"}
-      padding={padding}
-    >
+    <Container height={height} width={width} padding={padding}>
       {children}
     </Container>
   );
