@@ -56,7 +56,7 @@ export const App = () => {
       <Heading.H1 mt="7px" fontSize="25px">
         Overview
       </Heading.H1>
-      <Holder height="412px">
+      <Holder height="440px">
         <HeaderContainer>
           <MainTile>
             <Heading.H3 fontSize="18px">Social Media</Heading.H3>
@@ -75,7 +75,7 @@ export const App = () => {
           </MainButton>
         </HeaderContainer>
         <CardHolder>
-          <Card height="300px" width="50%" padding="20px">
+          <Card height="342px" width="50%" padding="20px">
             <ChartContainer />
           </Card>
           <VerticalHolder>
