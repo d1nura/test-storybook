@@ -1,17 +1,21 @@
 import {
   ResponsiveContainer,
   BarChart as BC,
-  CartesianGrid,
   XAxis,
   YAxis,
   Tooltip,
-  Legend,
   Bar,
 } from "recharts";
+import styled from "styled-components";
+
+const ChartHolder = styled.div`
+  margin-top: 20px;
+  height: 80%;
+`;
 
 export const BarChart = () => {
   return (
-    <div style={{ marginTop: 20, height: "80%" }}>
+    <ChartHolder>
       <ResponsiveContainer>
         <BC
           width={600}
@@ -30,7 +34,7 @@ export const BarChart = () => {
           {/* <Bar dataKey="uv" fill="#82ca9d" /> */}
         </BC>
       </ResponsiveContainer>
-    </div>
+    </ChartHolder>
   );
 };
 
